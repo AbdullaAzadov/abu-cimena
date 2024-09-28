@@ -14,9 +14,12 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     --light--1: #eaeaea;
+    --light--1a: #eaeaeab7;
+    --light--2: #d2d2d2;
     --dark--1: #0d0d0d;
     --dark--2: rgb(8, 8, 8);
     --brand--1: #f33f3f;
+    --brand--2: #960000;
 }
 body {
     margin: 0;
@@ -36,4 +39,9 @@ h1,
 h2,
 h3 {
     font-style: bold;
+}
+
+span {
+    display: inline;
+    line-height: max-content;
 }

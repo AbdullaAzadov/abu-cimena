@@ -1,0 +1,36 @@
+.button {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: var(--brand--2);
+    color: var(--light--2);
+    transition: all 0.2s ease-in-out;
+}
+
+.button:hover {
+    filter: brightness(1.2);
+}
+
+.button:active {
+    filter: brightness(0.9);
+}
+
+@media (min-width: 768px) {
+    .button {
+        padding: 0.6rem 1.2rem;
+        border-radius: 0.75rem;
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .button {
+        padding: 0.75rem 1.5rem;
+        border-radius: 1rem;
+        font-size: 1.25rem;
+    }
+}
