@@ -7,7 +7,7 @@
 
     color-scheme: light dark;
     color: rgba(255, 255, 255, 0.87);
-    background-color: #242424;
+    background-color: rgb(13, 13, 13);
 
     font-synthesis: none;
     text-rendering: optimizeLegibility;
@@ -21,7 +21,8 @@
     --brand--1: #f33f3f;
     --brand--2: #960000;
 }
-body {
+body,
+* {
     margin: 0;
     font-family: "Poppins", sans-serif;
 }

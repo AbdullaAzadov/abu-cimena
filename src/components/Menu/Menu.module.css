@@ -1,0 +1,28 @@
+.menuWrapper {
+    min-height: 100vh;
+    min-width: 300px;
+}
+
+.menuWrapper main {
+    box-sizing: border-box;
+    min-width: 300px;
+    min-height: 100vh;
+    margin: 0;
+    padding: 2rem 0;
+    position: fixed;
+    background-color: var(--dark--2);
+    display: flex;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    flex: 0.8;
+}
+
+.shortMenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0.2;
+}
