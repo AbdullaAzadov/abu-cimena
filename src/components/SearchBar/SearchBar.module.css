@@ -1,0 +1,27 @@
+.search {
+    padding: 0.5rem 0.4rem;
+    border-radius: 0.5rem;
+    outline: none;
+    border: 2px solid rgba(31, 31, 31, 0.9);
+    color: rgb(212, 212, 212);
+    font-weight: 600;
+    transition: 0.2s ease;
+    width: 100%;
+}
+.search::placeholder {
+    opacity: 0.75;
+    filter: contrast(0.25);
+    transition: 0.2s ease;
+}
+
+.search:hover::placeholder,
+.search:focus::placeholder {
+    opacity: 1;
+    filter: contrast(0.5);
+    color: rgb(155, 155, 155);
+}
+
+.search:focus {
+    background: rgb(4, 4, 4);
+    border: 2px solid var(--brand--1a);
+}
