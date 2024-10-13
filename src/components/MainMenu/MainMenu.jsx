@@ -1,6 +1,6 @@
 import { HiOutlineHome } from "react-icons/hi";
 import { MdFavoriteBorder, MdOutlineCalendarMonth } from "react-icons/md";
-import { FaArrowTrendUp } from "react-icons/fa6";
+import { BiSolidHot } from "react-icons/bi";
 import { TbCategory } from "react-icons/tb";
 
 import style from "./MainMenu.module.scss";
@@ -26,9 +26,7 @@ export default function MainMenu() {
                 <MenuNavSection icon={<MdFavoriteBorder />}>
                     Понравшиеся
                 </MenuNavSection>
-                <MenuNavSection icon={<FaArrowTrendUp />}>
-                    В тренде
-                </MenuNavSection>
+                <MenuNavSection icon={<BiSolidHot />}>В тренде</MenuNavSection>
                 <MenuNavSection icon={<TbCategory />}>Главное</MenuNavSection>
                 <MenuNavSection icon={<MdOutlineCalendarMonth />}>
                     Скоро

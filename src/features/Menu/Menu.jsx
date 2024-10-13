@@ -16,7 +16,7 @@ export default function Menu() {
         <div className={`${style.menu} ${isHide ? style.hide : ""}`}>
             <main>
                 <MainMenu />
-                <ShortMenu onClick={handleClickMenu} isActiveIcon={!isHide} />
+                <ShortMenu onClick={handleClickMenu} isHide={isHide} />
             </main>
         </div>
     );

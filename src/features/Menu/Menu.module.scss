@@ -18,8 +18,8 @@
 }
 
 .hide {
-    min-width: 3.125rem;
-    max-width: 3.125rem;
+    min-width: font-size-clamp(2.6rem, 3.75rem, $sm, $xl);
+    max-width: font-size-clamp(2.6rem, 3.75rem, $sm, $xl);
 
     main {
         margin-left: calc(-1 * font-size-clamp(10.4rem, 15rem, $sm, $xl));
