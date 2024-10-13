@@ -5,8 +5,8 @@ import { TbCategory } from "react-icons/tb";
 
 import style from "./MainMenu.module.scss";
 import Logo from "components/Logo/Logo";
-import SearchBar from "components/SearchBar/SearchBar";
-import MenuNavSection from "components/MenuNavSection/MenuNavSection";
+import SearchBar from "@/features/Menu/SearchBar/SearchBar";
+import MenuNavSection from "@/features/Menu/MenuNavSection/MenuNavSection";
 
 export default function MainMenu() {
     return (

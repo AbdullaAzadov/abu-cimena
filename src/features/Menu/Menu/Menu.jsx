@@ -2,8 +2,8 @@ import { useState } from "react";
 
 import style from "./Menu.module.scss";
 
-import MainMenu from "components/MainMenu/MainMenu";
-import ShortMenu from "@/components/ShortMenu/ShortMenu";
+import MainMenu from "@/features/Menu/MainMenu/MainMenu";
+import ShortMenu from "@/features/Menu/ShortMenu/ShortMenu";
 
 export default function Menu() {
     const [isHide, setIsHide] = useState(false);
