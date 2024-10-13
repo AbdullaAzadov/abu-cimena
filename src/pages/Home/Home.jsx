@@ -1,5 +1,5 @@
 import { useNavigate } from "react-router-dom";
-import styles from "./Home.module.css";
+import styles from "./Home.module.scss";
 import Logo from "../../components/Logo/Logo";
 import Button from "../../components/Button/Button";
 
@@ -11,8 +11,8 @@ export default function Home() {
     }
 
     return (
-        <main className={styles.main}>
-            <Logo />
+        <main className={styles.home}>
+            <Logo size="lg" color="light" />
             <p>Наслаждайтесь фильмами и сериалами.</p>
             <Button onClick={handleClick}>Начать смотреть</Button>
         </main>

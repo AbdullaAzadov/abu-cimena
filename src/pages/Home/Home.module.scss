@@ -1,0 +1,33 @@
+@use "styles/_variables" as *;
+@use "styles/_functions" as *;
+@use "styles/_mixins" as *;
+
+.home {
+    &::before {
+        @include pseudo-element();
+        @include centered-background("assets/home-bg.svg");
+        z-index: -1;
+    }
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: conic-gradient(
+        from 13deg at 29% 107%,
+        transparent -17deg,
+        $brand--2 175deg,
+        transparent 342deg,
+        $brand--2 535deg
+    );
+    text-align: center;
+
+    :global(p) {
+        font-weight: 100;
+        color: $light--1a;
+        user-select: none;
+        font-size: font-size-clamp(0.875rem, 1.125rem);
+        margin-bottom: 1.5rem;
+    }
+}

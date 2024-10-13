@@ -1,0 +1,10 @@
+@mixin centered-background($link-to-image) {
+    background: url($link-to-image) no-repeat center center;
+    background-size: cover;
+}
+
+@mixin pseudo-element() {
+    content: "";
+    position: absolute;
+    inset: 0;
+}

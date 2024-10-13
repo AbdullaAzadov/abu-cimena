@@ -1,0 +1,48 @@
+@use "styles/_variables" as *;
+@use "styles/_functions" as *;
+
+@mixin logo-size($size) {
+    font-size: $size;
+    font-size: font-size-clamp($size - 0.5rem, $size);
+
+    :global(.icon) {
+        font-size: $size - 0.25rem;
+        font-size: font-size-clamp($size - 0.25rem, $size);
+    }
+}
+
+.logo {
+    text-transform: uppercase;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+
+    :global(.icon) {
+        margin-bottom: 2px;
+    }
+
+    &:global(.sm) {
+        @include logo-size(1.25rem);
+    }
+
+    &:global(.md) {
+        @include logo-size(1.75rem);
+    }
+
+    &:global(.lg) {
+        @include logo-size(2.25rem);
+    }
+
+    &:global(.light) {
+        color: $light--1;
+    }
+
+    &:global(.dark) {
+        color: $dark--1;
+    }
+
+    &:global(.brand) {
+        color: $brand--1;
+    }
+}

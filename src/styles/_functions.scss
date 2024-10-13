@@ -1,0 +1,12 @@
+@function font-size-clamp(
+    $min-font,
+    $max-font,
+    $min-width: 20rem,
+    $max-width: 90rem
+) {
+    // calculating slope and intercept
+    $slope: calc(($max-font - $min-font) / ($max-width - $min-width));
+    $intercept: $min-font - ($slope * $min-width);
+
+    @return clamp($min-font, $intercept + #{$slope * 100}vw, $max-font);
+}
