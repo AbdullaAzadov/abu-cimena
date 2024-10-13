@@ -1,0 +1,27 @@
+@use "styles/_variables" as *;
+@use "styles/_functions" as *;
+
+.menu {
+    min-height: 100vh;
+    min-width: font-size-clamp(13rem, 18.75rem, $sm, $xl);
+    transition: all 0.5s;
+
+    main {
+        min-height: 100vh;
+        min-width: font-size-clamp(13rem, 18.75rem, $sm, $xl);
+        padding: 2rem 0;
+        position: fixed;
+        background-color: $dark--1;
+        display: flex;
+        transition: all 0.5s ease;
+    }
+}
+
+.hide {
+    min-width: 3.125rem;
+    max-width: 3.125rem;
+
+    main {
+        margin-left: calc(-1 * font-size-clamp(10.4rem, 15rem, $sm, $xl));
+    }
+}

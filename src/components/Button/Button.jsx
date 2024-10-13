@@ -5,11 +5,14 @@ export default function Button({
     onClick,
     type = "primary",
     disabled = false,
+    isActive = false,
 }) {
     return (
         <button
             onClick={onClick}
-            className={`${style.button} ${style[type]}`}
+            className={`${style.button} ${style[type]} ${
+                isActive ? "active" : ""
+            }`}
             disabled={disabled}
         >
             {children}

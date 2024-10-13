@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import styles from "./Home.module.scss";
-import Logo from "../../components/Logo/Logo";
-import Button from "../../components/Button/Button";
+import Logo from "components/Logo/Logo";
+import Button from "components/Button/Button";
 
 export default function Home() {
     const navigate = useNavigate();

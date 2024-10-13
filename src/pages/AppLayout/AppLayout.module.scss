@@ -1,0 +1,6 @@
+@use "styles/_variables" as *;
+
+.main {
+    display: flex;
+    background-color: $dark--2;
+}
